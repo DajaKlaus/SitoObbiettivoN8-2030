@@ -1,0 +1,321 @@
+/* Colors: #8E1B38-#FEF8F6-#D4ADB1-#9E666D */
+
+/* ! Base Style */    
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    background-color: #FEF8F6;
+    display: grid; /* We give its display property the grid value */
+    gap: 1rem;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+a {text-decoration: none; color: #000; text-transform: uppercase;}
+
+h1, h2, h3, h4, p {color: #000; padding-bottom: 30px;}
+
+.big-text {font-size: 70px;}
+.med-text {font-size: 40px;}
+.normal-text {font-size: 20px;}
+.snall-text {font-size: 14px}
+
+.intro-text {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/**/
+
+.logo {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    background-color: #fff;
+    display: grid; /* We give its display property the grid value */
+    gap: 1rem;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.logo img {
+    width: 100%;
+    grid-column-start: 2;
+    grid-column-end: 12;    
+}
+
+/* !Explanation */
+
+.explanation {
+    grid-column-start: 3;
+    grid-column-end: 11;
+    display: grid; /* We give its display property the grid value */
+    gap: 1rem;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.explanation h2 {
+    color: #D4ADB1;
+    padding: 0;
+    grid-column-start: 2;
+    grid-column-end: 13;
+}
+
+.explanation h1 {
+    color: #9E666D;
+    padding: 0;
+    grid-column-start: 2;
+    grid-column-end: 13;
+}
+
+.explanation p{
+    color: #9E666D;
+    padding: 0;
+    grid-column-start: 2;
+    grid-column-end: 9;
+}
+
+.explanation-content {
+    grid-column-start: 2;
+    grid-column-end: 13;
+}
+
+/* !Header */
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    width: 100%;
+    height: 46px;
+    position: sticky;
+    top: 0;
+    display: grid; /* We give its display property the grid value */
+    gap: 1rem;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: #8E1B38;
+}
+
+.menu {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    display: flex;
+    margin: 0px 150px;
+    justify-content: center;
+}
+
+.menu li {display: inline-block;}
+
+.menu li a {
+    color: #fff; 
+    padding: 15px 25px;
+    margin: 0px 10px; 
+    display: block;
+    transition: 0.5s ease;
+}   
+
+.menu li a:hover {
+    color: #8E1B38;
+    background-color: #fff;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer; 
+    padding-top: 8px;
+    grid-column-start: 12;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+}
+
+/* !Hero1 */
+
+.hero1 {
+    margin-top: 10px;
+    grid-column-start: 3;
+    grid-column-end: 11;
+    display: grid; /* We give its display property the grid value */
+    gap: 1rem;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.hero1 h2 {
+    color: #9E666D;
+    padding: 0;
+    font-weight: bold;
+    grid-column-start: 1;
+    grid-column-end: 13;
+}
+
+.hero1 h3 {
+    padding: 0;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    grid-column-start: 1;
+    grid-column-end: 13;
+}
+
+.hero1-content {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    justify-items: center;
+    display: grid; /* We give its display property the grid value */
+    gap: 1rem;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.hero1 p {
+    padding: 0;
+    grid-column-start: 1;
+    grid-column-end: 13;
+}
+
+.hero1-content img {
+    padding: 0;
+    grid-column-start: 1;
+    grid-column-end: 13;
+}
+
+.did {
+    padding: 0;
+    text-align: center;
+    font-style: italic;
+    grid-column-start: 1;
+    grid-column-end: 13;
+}
+
+/* !hero2 */
+
+.hero2 {
+    margin-top: 10px;
+    background-color: #D4ADB1;
+    text-align: center;
+    justify-items: center;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.hero2 img {
+    margin: 10px 0;
+    grid-column-start: 1;
+    grid-column-end: 13;
+}
+
+.hero2 p {
+    color: #9E666D;
+    grid-column-start: 1;
+    grid-column-end: 13;
+}
+
+/* !Tabelt */
+
+@media (max-width: 821px) {
+    .explanation img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .explanation-content {
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+
+    .explanation-content h1 {
+        font-size: 35px;
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+
+    .explanation-content h2 {
+        font-size: 20px;
+    }
+    
+    .explanation-content p {
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+
+    .hamburger {
+        display: block; /*show the hamburger*/
+    }
+
+    .hamburger.active .bar:nth-child(2) { /*second span desapper*/
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg); /*first span rotate of 45degres*/
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg); /*third span rotate of 45degres*/
+    }
+    
+    .menu {
+        margin: 0;
+        position: absolute;
+        top: 46px;
+        left: -100%;
+        flex-direction: column;
+        background-color: #8E1B38;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        transition: 0.3s;
+    }
+
+    .menu li {
+        margin: 16px 0;
+        width: 25%;
+    }
+
+    .menu li a {
+        border-radius: 4px;
+    }
+
+    .menu.active {
+        left: 0; /*translate the menu*/
+    }
+
+    .hero1-content #Ita1 {
+        width: 450px;
+        height: 150px;
+    }
+
+    .hero1-content #Ita2 {
+        width: 400px;
+        height: 200px;
+    }
+
+    .hero1-content .did {
+        font-size: 12px;
+    }
+
+    .hero2 img {
+        width: 230px;
+        height: 230px;
+    }
+}
+
+
+
+
+
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
