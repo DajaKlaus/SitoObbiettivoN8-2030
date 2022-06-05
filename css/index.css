@@ -260,7 +260,6 @@ h1, h2, h3, h4, p {color: #000; padding-bottom: 30px;}
 
     .menu li {
         margin: 16px 0;
-        width: 25%;
     }
 
     .menu li a {
@@ -277,6 +276,43 @@ h1, h2, h3, h4, p {color: #000; padding-bottom: 30px;}
     }
 }
 
+/* !Smartphones */
+
+@media (max-width: 413px) {
+    .explanation img {
+        display: none;
+    }
+
+    .explanation h2 {
+        padding: 0;
+        font-size: 18px;
+    }
+
+    .explanation h1 {
+        font-size: 30px;
+    }
+    
+    .explanation p {
+        font-size: 14px;
+    }
+
+    .hamburger {
+        margin-right: 10px;
+    }
+
+    .hero1 h2{
+        font-size: 18px;
+    }
+
+    .hero1 p {
+        font-size: 14px;
+    }
+
+    .hero2 img {
+        width: 150px;
+        height: 150px;
+    }
+}
 
 
 
