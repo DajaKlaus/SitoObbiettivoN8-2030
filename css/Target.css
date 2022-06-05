@@ -74,6 +74,7 @@ h1, h2, h3, h4, p {color: #000; padding-bottom: 30px;}
 
 .explanation p{
     color: #9E666D;
+    text-shadow: 1px 1px burlywood;
     padding: 0;
     grid-column-start: 2;
     grid-column-end: 9;
@@ -91,6 +92,7 @@ h1, h2, h3, h4, p {color: #000; padding-bottom: 30px;}
     grid-column-end: 13;
     width: 100%;
     height: 46px;
+    box-shadow: 0 3px 2px #9E666D;
     position: sticky;
     top: 0;
     display: grid; /* We give its display property the grid value */
@@ -119,7 +121,7 @@ h1, h2, h3, h4, p {color: #000; padding-bottom: 30px;}
 
 .menu li a:hover {
     color: #8E1B38;
-    background-color: #fff;
+    background-color: #FEF8F6;
 }
 
 .hamburger {
@@ -198,6 +200,10 @@ h1, h2, h3, h4, p {color: #000; padding-bottom: 30px;}
     color: #9E666D;
     grid-column-start: 1;
     grid-column-end: 13;
+}
+
+.hero2 p {
+    text-shadow: 1px 1px 1px red;
 }
 
 /* !Tabelt */
